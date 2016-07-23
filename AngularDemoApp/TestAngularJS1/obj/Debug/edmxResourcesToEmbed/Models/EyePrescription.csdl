@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EyePrescriptionModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="EyePrescriptionEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="LeftEyeAdds" EntityType="EyePrescriptionModel.LeftEyeAdd" />
+    <EntitySet Name="LeftEyeAxis" EntityType="EyePrescriptionModel.LeftEyeAxi" />
+    <EntitySet Name="LeftEyeCylinders" EntityType="EyePrescriptionModel.LeftEyeCylinder" />
+    <EntitySet Name="LeftEyeSpheres" EntityType="EyePrescriptionModel.LeftEyeSphere" />
+    <EntitySet Name="RightEyeAdds" EntityType="EyePrescriptionModel.RightEyeAdd" />
+    <EntitySet Name="RightEyeAxis" EntityType="EyePrescriptionModel.RightEyeAxi" />
+    <EntitySet Name="RightEyeCylinders" EntityType="EyePrescriptionModel.RightEyeCylinder" />
+    <EntitySet Name="RightEyeSpheres" EntityType="EyePrescriptionModel.RightEyeSphere" />
+    <EntitySet Name="UserProfiles" EntityType="EyePrescriptionModel.UserProfile" />
+    <EntitySet Name="vwUserProfiles" EntityType="EyePrescriptionModel.vwUserProfile" />
+  </EntityContainer>
+  <EntityType Name="LeftEyeAdd">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="LeftEyeAxi">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="LeftEyeCylinder">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="LeftEyeSphere">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="RightEyeAdd">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="RightEyeAxi">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="RightEyeCylinder">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="RightEyeSphere">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UserProfile">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="FirstName" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Password" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsValidated" />
+    <Property Type="String" Name="PasswardSent" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="AddedDate" />
+  </EntityType>
+  <EntityType Name="vwUserProfile">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="FirstName" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Password" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsValidated" />
+    <Property Type="String" Name="PasswardSent" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="AddedDate" />
+  </EntityType>
+</Schema>

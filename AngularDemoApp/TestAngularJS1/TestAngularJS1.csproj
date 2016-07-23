@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5EC6C4B7-7297-487B-889A-346D73115200}</ProjectGuid>
+    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestAngularJS1</RootNamespace>
+    <AssemblyName>TestAngularJS1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\EyePrescriptionController.cs" />
+    <Compile Include="Controllers\UserProfileController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EyePrescription.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EyePrescription.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ListClass.cs" />
+    <Compile Include="Models\SendMail.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AngularScript\app.js" />
+    <Content Include="AngularScript\EyePrescription.js" />
+    <Content Include="AngularScript\LoginController.js" />
+    <Content Include="AngularScript\MainController.js" />
+    <Content Include="AngularScript\RegistrationController.js" />
+    <Content Include="AngViews\EyePrescription.html" />
+    <Content Include="AngViews\ForgotPwdEmail.html" />
+    <Content Include="AngViews\Header.html" />
+    <Content Include="AngViews\Index.html" />
+    <Content Include="AngViews\LeftEye.html" />
+    <Content Include="AngViews\Login.html" />
+    <Content Include="AngViews\RegistrationForm.html" />
+    <Content Include="AngViews\RightEye.html" />
+    <Content Include="AngViews\ValidationEmail.html" />
+    <Content Include="Content\bootstrap-3.3.5-dist\css\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-3.3.5-dist\css\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap-3.3.5-dist\css\bootstrap.css" />
+    <Content Include="Content\bootstrap-3.3.5-dist\css\bootstrap.min.css" />
+    <Content Include="Content\bootstrap-3.3.5-dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\bootstrap-3.3.5-dist\js\bootstrap.js" />
+    <Content Include="Content\bootstrap-3.3.5-dist\js\bootstrap.min.js" />
+    <Content Include="Content\bootstrap-3.3.5-dist\js\npm.js" />
+    <Content Include="Content\jquery-ui-1.11.4\external\jquery\jquery.js" />
+    <Content Include="Content\jquery-ui-1.11.4\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Content\jquery-ui-1.11.4\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Content\jquery-ui-1.11.4\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Content\jquery-ui-1.11.4\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Content\jquery-ui-1.11.4\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Content\jquery-ui-1.11.4\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\jquery-ui-1.11.4\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Content\jquery-ui-1.11.4\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Content\jquery-ui-1.11.4\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Content\jquery-ui-1.11.4\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\jquery-ui-1.11.4\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Content\jquery-ui-1.11.4\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Content\jquery-ui-1.11.4\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Content\jquery-ui-1.11.4\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\jquery-ui-1.11.4\index.html" />
+    <Content Include="Content\jquery-ui-1.11.4\jquery-ui.css" />
+    <Content Include="Content\jquery-ui-1.11.4\jquery-ui.js" />
+    <Content Include="Content\jquery-ui-1.11.4\jquery-ui.min.css" />
+    <Content Include="Content\jquery-ui-1.11.4\jquery-ui.min.js" />
+    <Content Include="Content\jquery-ui-1.11.4\jquery-ui.structure.css" />
+    <Content Include="Content\jquery-ui-1.11.4\jquery-ui.structure.min.css" />
+    <Content Include="Content\jquery-ui-1.11.4\jquery-ui.theme.css" />
+    <Content Include="Content\jquery-ui-1.11.4\jquery-ui.theme.min.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\eye_cma1.gif" />
+    <Content Include="Images\eye_cma2.gif" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Scripts\angular-route.js" />
+    <Content Include="Scripts\angular-routeParams.js" />
+    <Content Include="Scripts\Angular.js" />
+    <Content Include="Scripts\Jqueryv1.11.3.js" />
+    <Content Include="Scripts\ui-router.js" />
+    <Content Include="Views\EyePrescription\Index.aspx" />
+    <Content Include="Views\UserProfile\Index.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\bootstrap-3.3.5-dist\css\bootstrap-theme.css.map" />
+    <None Include="Content\bootstrap-3.3.5-dist\css\bootstrap.css.map" />
+    <None Include="Content\bootstrap-3.3.5-dist\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Content\bootstrap-3.3.5-dist\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Content\bootstrap-3.3.5-dist\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Content\bootstrap-3.3.5-dist\fonts\glyphicons-halflings-regular.woff2" />
+    <EntityDeploy Include="Models\EyePrescription.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EyePrescription.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49331</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

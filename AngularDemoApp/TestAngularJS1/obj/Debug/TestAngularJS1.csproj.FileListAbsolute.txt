@@ -1,0 +1,5 @@
+C:\Webporject\AngularJS\TestAngularJS1\TestAngularJS1\bin\TestAngularJS1.dll
+C:\Webporject\AngularJS\TestAngularJS1\TestAngularJS1\bin\TestAngularJS1.pdb
+C:\Webporject\AngularJS\TestAngularJS1\TestAngularJS1\obj\Debug\TestAngularJS1.dll
+C:\Webporject\AngularJS\TestAngularJS1\TestAngularJS1\obj\Debug\TestAngularJS1.pdb
+C:\Webporject\AngularJS\TestAngularJS1\TestAngularJS1\obj\Debug\TestAngularJS1.csprojResolveAssemblyReference.cache

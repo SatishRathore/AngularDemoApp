@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EyePrescriptionModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="EyePrescriptionModelStoreContainer">
+    <EntitySet Name="LeftEyeAdd" EntityType="EyePrescriptionModel.Store.LeftEyeAdd" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="LeftEyeAxis" EntityType="EyePrescriptionModel.Store.LeftEyeAxis" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="LeftEyeCylinder" EntityType="EyePrescriptionModel.Store.LeftEyeCylinder" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="LeftEyeSphere" EntityType="EyePrescriptionModel.Store.LeftEyeSphere" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RightEyeAdd" EntityType="EyePrescriptionModel.Store.RightEyeAdd" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RightEyeAxis" EntityType="EyePrescriptionModel.Store.RightEyeAxis" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RightEyeCylinder" EntityType="EyePrescriptionModel.Store.RightEyeCylinder" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RightEyeSphere" EntityType="EyePrescriptionModel.Store.RightEyeSphere" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserProfile" EntityType="EyePrescriptionModel.Store.UserProfile" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vwUserProfile" EntityType="EyePrescriptionModel.Store.vwUserProfile" store:Type="Views" store:Schema="dbo" store:Name="vwUserProfile">
+      <DefiningQuery>SELECT 
+      [vwUserProfile].[ID] AS [ID], 
+      [vwUserProfile].[FirstName] AS [FirstName], 
+      [vwUserProfile].[LastName] AS [LastName], 
+      [vwUserProfile].[Email] AS [Email], 
+      [vwUserProfile].[Password] AS [Password], 
+      [vwUserProfile].[IsValidated] AS [IsValidated], 
+      [vwUserProfile].[PasswardSent] AS [PasswardSent], 
+      [vwUserProfile].[AddedDate] AS [AddedDate]
+      FROM [dbo].[vwUserProfile] AS [vwUserProfile]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <EntityType Name="LeftEyeAdd">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="LeftEyeAxis">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="LeftEyeCylinder">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="LeftEyeSphere">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="RightEyeAdd">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="RightEyeAxis">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="RightEyeCylinder">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="RightEyeSphere">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UserProfile">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="150" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="150" />
+    <Property Name="Email" Type="nvarchar" MaxLength="150" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsValidated" Type="bit" />
+    <Property Name="PasswardSent" Type="varchar" MaxLength="500" />
+    <Property Name="AddedDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'EyePrescription.dbo.vwUserProfile' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="vwUserProfile">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="150" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="150" />
+    <Property Name="Email" Type="nvarchar" MaxLength="150" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsValidated" Type="bit" />
+    <Property Name="PasswardSent" Type="varchar" MaxLength="500" />
+    <Property Name="AddedDate" Type="datetime" />
+  </EntityType>
+</Schema>

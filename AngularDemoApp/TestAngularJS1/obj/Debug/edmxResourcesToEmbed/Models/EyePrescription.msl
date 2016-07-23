@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EyePrescriptionModelStoreContainer" CdmEntityContainer="EyePrescriptionEntities">
+    <EntitySetMapping Name="LeftEyeAdds">
+      <EntityTypeMapping TypeName="EyePrescriptionModel.LeftEyeAdd">
+        <MappingFragment StoreEntitySet="LeftEyeAdd">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LeftEyeAxis">
+      <EntityTypeMapping TypeName="EyePrescriptionModel.LeftEyeAxi">
+        <MappingFragment StoreEntitySet="LeftEyeAxis">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LeftEyeCylinders">
+      <EntityTypeMapping TypeName="EyePrescriptionModel.LeftEyeCylinder">
+        <MappingFragment StoreEntitySet="LeftEyeCylinder">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LeftEyeSpheres">
+      <EntityTypeMapping TypeName="EyePrescriptionModel.LeftEyeSphere">
+        <MappingFragment StoreEntitySet="LeftEyeSphere">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RightEyeAdds">
+      <EntityTypeMapping TypeName="EyePrescriptionModel.RightEyeAdd">
+        <MappingFragment StoreEntitySet="RightEyeAdd">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RightEyeAxis">
+      <EntityTypeMapping TypeName="EyePrescriptionModel.RightEyeAxi">
+        <MappingFragment StoreEntitySet="RightEyeAxis">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RightEyeCylinders">
+      <EntityTypeMapping TypeName="EyePrescriptionModel.RightEyeCylinder">
+        <MappingFragment StoreEntitySet="RightEyeCylinder">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RightEyeSpheres">
+      <EntityTypeMapping TypeName="EyePrescriptionModel.RightEyeSphere">
+        <MappingFragment StoreEntitySet="RightEyeSphere">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserProfiles">
+      <EntityTypeMapping TypeName="EyePrescriptionModel.UserProfile">
+        <MappingFragment StoreEntitySet="UserProfile">
+          <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
+          <ScalarProperty Name="PasswardSent" ColumnName="PasswardSent" />
+          <ScalarProperty Name="IsValidated" ColumnName="IsValidated" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwUserProfiles">
+      <EntityTypeMapping TypeName="EyePrescriptionModel.vwUserProfile">
+        <MappingFragment StoreEntitySet="vwUserProfile">
+          <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
+          <ScalarProperty Name="PasswardSent" ColumnName="PasswardSent" />
+          <ScalarProperty Name="IsValidated" ColumnName="IsValidated" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
